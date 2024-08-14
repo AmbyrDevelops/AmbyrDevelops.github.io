@@ -1,1 +1,137 @@
+body {
+  & header {
+    & h1 {
+      padding-top: 1rem;
+    }
+    
+    & nav {
+      display: flex;
+      justify-content: space-evenly;
+      border-top: 1rem solid;
+      border-bottom: 1rem solid;
+      border-color: #5072A7;
+    
+      & a {
+        dispaly: block;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        text-decoration: none;
+        color: #5072A7;
+        font-weight: bold;
+        
+        &:hover {
+          text-decoration: underline;
+          color: #6CB4EE;
+        }
+      }
+    }
+  }
+  
+  & h1, h2 {
+    font-family: 'Roboto Slab', serif;
+  }
+  
+  & p, nav, ul, ol {
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  & hr {
+    margin: 2rem 0;
+    background-color: transparent;
+    border-top: 3px dotted #5072A7;
+  }
+  
+  @media (max-width: 468px) {
+    padding: 20px 50px;
+    width: 100%;
+    
+    .flex-container {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1em;
+    }
+  }
 
+  @media (min-width: 468px) {
+    padding: 20px;
+  }
+
+  @media (min-width: 600px) {
+    padding: 40px;
+  }
+  
+  @media (min-width: 768px) {
+    padding: 75px;
+    
+    .flex-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 50px;
+    }
+  }
+
+  @media (min-width: 992px) {
+    padding: 100px;
+
+    & section {
+      display: grid;
+    }
+  }
+}
+
+
+.self-img {
+  position: relative;
+
+  & img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.youtube-video {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+
+  & iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.mi-img {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+
+  & img {
+    @media (max-width: 468px) {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
+
+    @media (min-width: 768px) {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: auto;
+      height: 100%;
+    }
+  }
+}
+
+.social-icon {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 6rem;
+}

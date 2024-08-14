@@ -1,91 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ambyr Lantigua Wiki Bio</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
-</head>
-<body>
-  <header>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#facts-hobbies">Facts and Hobbies</a>
-      <a href="#location">Location</a>
-      <a href="#social">Social</a>
-    </nav>
-    <h1>Ambyr Lantigua Wiki Bio</h1>
-  </header>
-  
-  <hr>
-  <main>
-    <section id="about">
-      <h2>About</h2>
-      <div class="flex-container">
-        <div>
-          <p>
-            I am Ambyr Lantigua and a native of Michigan. I currently work as a Web Developer and am a student majoring in Computer Science. I <strong>love</strong> my profession, and it inspires me to want to improve my skillset. I would love to be able to work in a creative environment that allows me to bring out the best in myself as a web developer. I am a very zen person who loves spending quality time with my husband and dog at home.
-          </p>
-  
-          <p>
-            Growing up I was always a creative person who enjoyed being stuck on the computer or playing a video game.  Life has allowed me to crack out of my shell and enjoy positive social experiences and various hobbies.  I've learned not to silo myself when so many others try to silo you on your behalf. <em> Life is not one size fits all. </em>  It's fun to explore the different talents that were given to us. 
-        </p>
-        </div>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">  
+    <meta name="milestone" content="Portfolio">
+    <!-- TODO: Replace this with your title -->
+    <title>Ambyr Elan</title>  
+    <!-- 
+			TODO: Add Bootstrap CSS link tag from: 
+      https://getbootstrap.com/docs/5.2/getting-started/introduction/
+		-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- 
+			TODO: Add Bootstrap Icons link tag from: 
+			https://icons.getbootstrap.com/
+			(Remember, the CDN link is towards the bottom of the page!)
+		-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Custom styles (these can extend the default Bootstrap styles) -->
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grandiflora+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Glegoo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+  </head>
 
-        <div class="self-img">
-          <img src="https://i.imgur.com/qSgb00f.png" alt="Ambyr Lantigua" />
+  <body>
+    <!-- TODO: Paste Navbar code and customize links -->  
+    <header id="navigation">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><i class="bi bi-code-slash"></i></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#mission-section">Mission</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skills-section">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact-section">Contact</a>
+              </li>
+            </ul>
+            <span class="navbar-text">
+              Ambyr Elan Portfolio
+            </span>
+          </div>
         </div>
-      </div>
-    </section>
-
-    <hr>
-
-    <section id="facts-hobbies">
-      <divo class="flex-container">
-        <div>
-          <h2>Fun Facts</h2>
-          <ol>
-            <li>I met my husband in college </li>
-            <li>I dream of modding my car </li>
-            <li>I know how to ride a motorcycle</li>
-            <li>I love martial arts films </li>
-          </ol>
-        </div>
-
-        <div>
-          <h2>Hobbies</h2> 
-          <ul>
-            <li>Watching anime</li>
-            <li>Wed design and development </li> 
-            <li>House design and interior decorating</li>
-            <li>Playing video games </li>
-          </ul>
-        </div>
-      </div>
-    </section>
+      </nav>
+    </header>
     
-    <hr>
-
-    <section id="location">
-      <div class="flex-container">
-        <div class="youtube-video">
-          <iframe src="https://www.youtube.com/embed/qY02yEvqFio?si=LKtty5Wb0iFzGKs5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <!-- Hero section -->
+    <section id="hero-section">
+      <div class="hero">
+        <div>
+          <div class="profile-image">
+             <img src="https://i.imgur.com/qSgb00f.png" alt="Photo of Ambyr Elan" />
+          </div>
+          <h1>Ambyr Elan</h1>
+          <p>Web developer and designer.</p>
         </div>
-        <div class="mi-img">
-           <img src="https://i.imgur.com/WmhCx91.png" alt="Image of the state of Michigan"" />
+      </div>
+    </section>
+      
+    <main>
+    	<!-- Mission/Meet-me section -->
+      <section id="mission-section">
+        <h2>Mission</h2>
+        <div class="flex-box">
+          <div class="mission-image">
+            <img src="img/mission/woman-dev.jpg" alt="Cartoon graphic of woman developer" />
+          </div>
+          <div class="mission-content">
+            <p>
+              My mission is to digitally create and bring ideas to screen.
+              I love my profession, and enjoy taking on new and challenging projects. Creative endeavors inspire me to deliver the best possible product.
+            </p>
+          </div>
+        </div>
+    	</section>
+    
+      <!-- Skills section -->
+      <section id="skills-section">
+        <h2>Skills</h2>
+        <div class="flex-box">
+          <div>
+            <img src="img/skills/html5-logo.png" alt="HTML logo" />
+            <p>
+              Structuring the web's content using modern semantic HTML.
+            </p>
+          </div>
+          <div>
+            <img src="img/skills/css-logo.png" alt="CSS logo" />
+            <p>
+              Presenting beautiful web designs and interactions using modern CSS.
+            </p>
+          </div>
+          <div>
+            <img src="img/skills/javascript-logo.png" alt="JavaScript logo" />
+            <p>
+              Making interactive experiences, games, web apps, and more using JavaScript. 
+            </p>
+          </div>
+          <div>
+            <img src="img/skills/bootstrap-logo.png" alt="Bootstrap" />
+            <p>
+              Rapidly developing responsive websites using the web's most popular framework.
+            </p>
+          </div>
+        </div>
+    	</section>
+    
+      <!-- Contact Section -->
+      <section id="contact-section">
+        <h2>Contact</h2>
+        <div class="">
+          <a href="https://codepen.io/ambyrelan">
+            <img src="img/svg/codepen.svg" alt="CodePen logo" />
+          </a>
+          <a href="https://github.com/ambyrelan">
+             <img src="img/svg/github.svg" alt="GitHub logo" />
+          </a>
+          <a href="mailto:me@ambyr.me">
+             <img src="img/svg/envelope.svg" alt="E-Mail logo" />
+          </a>
         </div>
       </section>
-    </div>
-  </main>
-  
-  <hr>
+    </main>
 
-  <footer id="social">
-    <a href="https://github.com/AmbyrElan" target="_blank"><img src="https://i.imgur.com/nRoeGSu.png" class="social-icon" alt="Ambyr Lantigua's GitHub page" /></a>
-  </footer>
-</body>
+    <footer class="footer">
+      <i class="bi bi-c-circle"></i>
+      <span>Ambyr Elan. All rights reserved.</span>
+    </footer>
+  </body>
+  <!-- 
+    TODO: Paste Bootstrap JavaScript script tag from:
+    https://getbootstrap.com/docs/5.2/getting-started/introduction/
+  -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </html>

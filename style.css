@@ -1,49 +1,44 @@
 body {
-
   background-color: #FFFDF9;
-  /* margin around page area */
-  /* applies to small devices (landscape phones, less than 768px) */
-  @media (max-width: 767.98px) {
-    & main {
-      margin-left: 1rem;
-      margin-right: 1rem;
-    }
 
-    .container-fluid {
-      margin-left: 0.4rem;
-      margin-right: 0.4rem;
-    }
+  header nav div:first-child {
+    max-width: 1200px;
+    margin: 0 auto;
   }
 
-  /* Medium devices (tablets, 768px and up) */
-  @media (min-width: 768px) {
-    & main {
-      margin-left: 3rem;
-      margin-right: 3rem;
-    }
-
-    .container-fluid {
-      margin-left: 2.2rem;
-      margin-right: 2.2rem;
-    }
+  .contain {
+    max-width: 1200px;
+    margin: 0 auto;
   }
 
-  & h2, h3, h4 {
+  h2, h3, h4 {
     font-family: 'Glegoo', serif;
     font-weight: 900;
   }
   
-  & h2 {
+  h2 {
     margin-top: 2rem;
     margin-bottom: 2rem;
-    text-align: center;
+    letter-spacing: 2px;
   }
 
-  & p, li {
+  p {
     letter-spacing: 1.5px;
-    padding: 0 20px;
     font-family: 'Montserrat', sans-serif;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
+}
+
+.myrow {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.mywrapper {
+  max-width: 1200px;
 }
 
 section {
@@ -58,6 +53,10 @@ section {
     background: linear-gradient(180deg, rgba(0, 0, 0, 1.0), rgba(44, 44, 44, 0));
     padding-bottom: 50px;
     z-index: 2;
+  }
+
+  .navbar-expand-lg {
+    justify-content: center;
   }
   
   .navbar-brand {
@@ -118,13 +117,13 @@ section {
       margin-right: auto;
     }
     
-    & img {
+    img {
       min-width: 100%;
       min-height: 100%;
       object-fit: cover;
     }
 
-    & h1 {
+    h1 {
       font-family: 'Grandiflora One', cursive;
       font-weight: 900;
       font-size: 7rem;
@@ -132,7 +131,7 @@ section {
       text-shadow: 3px 3px 2px black;
     }
 
-    & p {
+    p {
       font-size: 2rem;
       font-weight: 900;
       text-shadow: 3px 3px 2px black;
@@ -141,12 +140,23 @@ section {
       margin-bottom: 5rem;
     }
   }
+
+  @media only screen and (max-width: 768px) {
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-top: 1rem;
+    }
+
+    .hero p {
+      font-size: 0.75rem;
+      margin-top: 1rem;
+    }
+  }
 }
 
 #mission-section {
   .flex-box {
     display: flex;
-    width: 100%;
     flex-flow: row wrap;
     align-items: stretch;
 
@@ -160,55 +170,119 @@ section {
   .mission-image {
     position: relative;
 
-    & img {
+    img {
       width: 100%;
       object-fit: cover;
+      margin-top: 2rem;
     }
   }
 }
 
 #skills-section {
-  .flex-box {
-    display: flex;
-    flex-flow: row wrap;
-    width: 100%;
-    align-items: stretch;
-  }
-    
-  .flex-box > div {
-    margin-bottom: 1rem;
-    
-    @media (min-width: 768px) {
-      width: 50%;
-    }
+  background-color: #fef2ee;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
 
-    @media (min-width: 992px) {
-      width: 25%;
-    }
-  }
-  
-  & img {
-    width: 50%;
-    margin: 0 auto;
+  h2 {
     display: block;
+    width: 100%;
+  }
+
+  img {
+    display: block;
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
   }
 }
 
-#contact-section {
-  & div {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+
+  div {
+    width: 20%;
+    height: 100%;
   }
+}
+
+.card-group {
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  column-gap: 1rem;
+
+  h2 {
+    display: block;
+    width: 100%;
+  }
+}
+
+.card {
+  box-shadow: 4px 4px 10px gray;
+  --bs-card-border-color: none;
+
+  @media only screen and (min-width: 768px) {
+    max-width: 50%;
+  }
+}
+
+.card-body {
+  background-color: #EADDCA; /* almond */
+}
+
+.card-footer {
+  background-color: #967969; /* light brown */
   
-  & a {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+
+  a {
+    color: white;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1.5px;
+    
+    &:hover {
+      text-decoration: none;
+      color: black;
+    }
+  }
+}
+
+.card-footer:last-child {
+  border-radius: 0;
+}
+
+#contact-section {
+  background-color: #967969; /* mocha */
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  a {
     text-decoration: none;
   }
   
-  & img {
-    width: 100px;
-    height: 100px;
+  img {
+    width: 50px;
+    height: 50px;
   }
+
+  img:hover {
+    transform: scale(1.2);
+    transition: ease-in-out 0.3s;
+  }
+}
+
+.social-icons {
+  display: flex;
+  column-gap: 3rem;
 }
 
 footer {

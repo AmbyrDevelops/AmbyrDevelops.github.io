@@ -1,18 +1,17 @@
 body {
-  & header {
-    & h1 {
-      padding-top: 1rem;
-    }
-    
-    & nav {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  header {    
+    nav {
       display: flex;
       justify-content: space-evenly;
       border-top: 1rem solid;
       border-bottom: 1rem solid;
       border-color: #5072A7;
-    
-      & a {
-        dispaly: block;
+
+      a {
+        display: block;
         padding-top: 1rem;
         padding-bottom: 1rem;
         text-decoration: none;
@@ -27,20 +26,20 @@ body {
     }
   }
   
-  & h1, h2 {
+  h1, h2 {
     font-family: 'Roboto Slab', serif;
   }
   
-  & p, nav, ul, ol {
+  p, nav, ul, ol {
     font-family: 'Montserrat', sans-serif;
   }
   
-  & hr {
+  hr {
     margin: 2rem 0;
     background-color: transparent;
     border-top: 3px dotted #5072A7;
   }
-  
+
   @media (max-width: 468px) {
     padding: 20px 50px;
     width: 100%;
@@ -74,19 +73,23 @@ body {
   @media (min-width: 992px) {
     padding: 100px;
 
-    & section {
+    section {
       display: grid;
     }
   }
 }
 
-
 .self-img {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -3rem;
 
-  & img {
-    width: 100%;
+  img {
+    width: 75%;
     object-fit: cover;
+    transform: scale(-1, 1);
   }
 }
 
@@ -111,7 +114,7 @@ body {
   padding-bottom: 56.25%;
   height: 0;
 
-  & img {
+  img {
     @media (max-width: 468px) {
       display: block;
       margin-left: auto;

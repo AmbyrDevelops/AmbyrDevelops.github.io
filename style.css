@@ -6,11 +6,6 @@ body {
     margin: 0 auto;
   }
 
-  .contain {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-
   h2, h3, h4 {
     font-family: 'Glegoo', serif;
     font-weight: 900;
@@ -28,6 +23,11 @@ body {
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
+}
+
+.contain {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .myrow {

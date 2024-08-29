@@ -1,94 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ambyr Develops Wiki Bio</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
-</head>
-<body>
-  <header>
-    <nav>
-      <a href="/">Home</a>
-      <a href="#about">About</a>
-      <a href="#facts-hobbies">Facts and Hobbies</a>
-      <a href="#location">Location</a>
-      <a href="#social">Social</a>
-    </nav>
-  </header>
-  
-  <main> 
-    <div class="main-container">
-      <h1>Ambyr Develops Wiki Bio</h1>
-      <hr>
-      <section id="about">
-        <h2>About</h2>
-        <div class="flex-container">
-          <div>
-            <p>
-              My name is Ambyr and if you could not tell already, I am a developer based out of Michigan.
-              In addition to working as a full time developer, I am also a student studying Computer Science.
-              I <strong>love</strong> my profession, and it inspires me to continually improve my skillset. 
-              I would love to be able to work in an environment that challenges me to produce my best work. 
-              I am a natural homebody who loves spending quality time with my husband and dog at home.
-            </p>
-            <p>
-              I have been developing professionally for over 3 years. 
-              I have experience in front-end and back-end development, and I am always looking to learn new technologies. 
-              I am currently learning more about Docker and system design, and I am excited to see where this new knowledge will take me.
-            </p>
-          </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ambyr Develops Wiki Bio</title>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <nav id="nav">
+                <a href="/">Home</a>
+                <a href="#about">About</a>
+                <a href="#facts-hobbies">Facts</a>
+                <a href="#location">Location</a>
+                <a href="#social">Social</a>
+            </nav>
+        </header>
 
-          <div class="self-img">
-            <img src="img/Cartoon-Profile-Blue-Background-Ambyr-Lantigua.png" alt="Cartoon image representng Ambyr" />
-          </div>
-        </div>
-      </section>
-      <hr>
-      <section id="facts-hobbies">
-        <div class="flex-container">
-          <div>
-            <h2>Fun Facts</h2>
-            <ol>
-              <li>I met my husband in college </li>
-              <li>I dream of modding my car </li>
-              <li>I know how to ride a motorcycle</li>
-              <li>I love martial arts films </li>
-            </ol>
-          </div>
+        <main> 
+            <h1>Ambyr Develops Wiki Bio</h1>
 
-          <div>
-            <h2>Hobbies</h2> 
-            <ul>
-              <li>Watching anime</li>
-              <li>Web design and development </li> 
-              <li>House design and interior decorating</li>
-              <li>Playing video games</li>
-              <li>Learning new skills</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-      <hr>
-      <section id="location">
-        <div class="flex-container">
-          <div class="youtube-video">
-            <iframe src="https://www.youtube.com/embed/qY02yEvqFio?si=LKtty5Wb0iFzGKs5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          </div>
-          <div class="mi-img">
-            <img src="https://i.imgur.com/WmhCx91.png" alt="Image of the state of Michigan"" />
-          </div>
-        </div>
-      </section>
-      <hr>
-      <footer id="social">
-        <a href="https://github.com/AmbyrElan" target="_blank"><img src="https://i.imgur.com/nRoeGSu.png" class="social-icon" alt="Ambyr Lantigua's GitHub page" /></a>
-      </footer>
-    </div>
-  </main>
-</body>
+            <hr>
+
+            <section id="about">
+                <h2>About</h2>
+                <div class="about-me">
+                    <img src="img/Cartoon-Profile-Blue-Background-Ambyr-Lantigua.png" alt="Cartoon image representng Ambyr" />
+                    <p>
+                        My name is Ambyr and if you could not tell already, I am a developer based out of Michigan.
+                        In addition to working as a full time developer, I am also a student studying Computer Science.
+                        I <strong>love</strong> my profession, and it inspires me to continually improve my skillset. 
+                        I would love to be able to work in an environment that challenges me to produce my best work. 
+                        <br>
+                        <br>
+                        I am a natural homebody who loves spending quality time with my husband and dog at home.
+                        I have been developing professionally for over 3 years. 
+                        I have experience in front-end and back-end development, and I am always looking to learn new technologies. 
+                        I am currently learning more about Docker and system design, and I am excited to see where this new knowledge will take me.
+                    </p>
+                </div>
+            </section>
+
+            <hr>
+
+            <section id="facts-hobbies">
+                <div class="flex-container">
+                    <div>
+                        <h2>Fun Facts</h2>
+                        <ol>
+                            <li>I met my husband in college </li>
+                            <li>I dream of modding my car </li>
+                            <li>I know how to ride a motorcycle</li>
+                            <li>I love martial arts films </li>
+                        </ol>
+                    </div>
+
+                    <div>
+                        <h2>Hobbies</h2> 
+                        <ul>
+                            <li>Watching anime</li>
+                            <li>Web design and development </li> 
+                            <li>House design and interior decorating</li>
+                            <li>Playing video games</li>
+                            <li>Learning new skills</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <hr>
+
+            <section id="location">
+                <div class="flex-container">
+                    <div class="youtube-video">
+                        <iframe src="https://www.youtube.com/embed/qY02yEvqFio?si=LKtty5Wb0iFzGKs5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <div class="mi-img">
+                        <img src="https://i.imgur.com/WmhCx91.png" alt="Image of the state of Michigan" />
+                    </div>
+                </div>
+            </section>
+
+            <hr>
+
+            <footer id="social">
+                <a href="https://github.com/AmbyrElan" target="_blank"><img src="https://i.imgur.com/nRoeGSu.png" class="social-icon" alt="Ambyr Lantigua's GitHub page" /></a>
+            </footer>
+
+            <div class="up-arrow">
+                <a href="#nav">
+                    <svg fill="#000000" viewBox="0 0 24 24" id="up-direction-circle" data-name="Flat Color" xmlns="http://www.w3.org/2000/svg" class="icon flat-color">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier"><circle id="primary" cx="12" cy="12" r="10" style="fill: #5cb4c3;"></circle>
+                        <path id="secondary" d="M14,12v4a1,1,0,0,1-1,1H11a1,1,0,0,1-1-1V12H9.18a1,1,0,0,1-.76-1.65l2.82-3.27a1,1,0,0,1,1.52,0l2.82,3.27A1,1,0,0,1,14.82,12Z" style="fill: #fff;"></path>
+                        </g>
+                    </svg>
+                </a>
+            </div>
+        </main>
+    </body>
 </html>

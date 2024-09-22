@@ -4,7 +4,7 @@
 
 - Two single page web apps brought together to create a living resume.
 - Homepage showcases my living resume and projects.
-- Wiki page is linked house the more about me topics.
+- Wiki page is linked housing the more about me topics.
 
 ## Stack
 

@@ -1,7 +1,16 @@
+using AmbyrDevelops.DatabaseContext;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+
+// Register ApplicationDbContext
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+{
+    options.UseNpgsql(builder.Configuration.GetConnectionString("DefautConnection"));
+});
 
 var app = builder.Build();
 

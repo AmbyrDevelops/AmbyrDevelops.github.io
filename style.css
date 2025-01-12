@@ -11,7 +11,7 @@ body {
         font-weight: 900;
     }
 
-    h2 {
+    h2, h3 {
         margin-top: 2rem;
         margin-bottom: 2rem;
         letter-spacing: 2px;
@@ -225,8 +225,13 @@ section {
     }
 }
 
+#projects-section {
+    margin-bottom: 4rem;
+}
+
 .card-group {
-    column-gap: 1rem;
+    column-gap: 2rem;
+    justify-content: center;
 
     h2 {
         display: block;
@@ -234,17 +239,45 @@ section {
     }
 }
 
-.card {
-    box-shadow: 4px 4px 10px gray;
-    --bs-card-border-color: none;
+.card-group > .card {
+    flex: 1 0 33%;
+    margin-bottom: 18px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 10px 0 10px gray;
+    --bs-card-border-color: gray;
 
     @media only screen and (min-width: 768px) {
-        max-width: 50%;
+        max-width: 33%;
     }
+}
+
+.card-group > .card:not(:last-child) {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .card-body {
     background-color: #EADDCA; /* almond */
+}
+
+.card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.card-group > .card:not(:first-child) {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-group > .card:not(:first-child) .card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-group > .card:not(:last-child) .card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .card-footer {

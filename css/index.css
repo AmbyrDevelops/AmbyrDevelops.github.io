@@ -6,7 +6,11 @@ body {
         margin: 0 auto;
     }
 
-    h2, h3, h4 {
+    h1 {
+        font-size: 4em;
+    }
+
+    h1, h2, h3, h4 {
         font-family: 'Glegoo', serif;
         font-weight: 900;
     }
@@ -18,6 +22,7 @@ body {
     }
 
     p {
+        font-size: 1.75em;
         letter-spacing: 1.5px;
         font-family: 'Montserrat', sans-serif;
         margin-top: 1rem;
@@ -85,96 +90,6 @@ section {
 
     .navbar-toggler-icon {
         background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-    }
-}
-
-#hero-section {
-    .hero {
-        background: 
-        linear-gradient(180deg, rgba(72, 60, 50, 1), rgba(187, 169, 154, 0.3)),
-        url(img/background/html-code_640.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-
-        .profile-image {
-            border-radius: 50%;
-            background-color: white;
-            height: 200px;
-            width: 200px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            overflow: hidden;
-            margin-top: 7em;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        img {
-            min-width: 100%;
-            min-height: 100%;
-            object-fit: cover;
-        }
-
-        h1 {
-            font-family: 'Grandiflora One', cursive;
-            font-weight: 900;
-            font-size: 7rem;
-            color: white;
-            text-shadow: 3px 3px 2px black;
-        }
-
-        p {
-            font-size: 2rem;
-            font-weight: 900;
-            text-shadow: 3px 3px 2px black;
-            color: white;
-            font-family: 'Glegoo', serif;
-            margin-bottom: 5rem;
-        }
-    }
-
-    @media only screen and (max-width: 768px) {
-        .hero h1 {
-            font-size: 2.5rem;
-            margin-top: 1rem;
-        }
-
-        .hero p {
-            font-size: 0.75rem;
-            margin-top: 1rem;
-        }
-    }
-}
-
-#mission-section {
-    .flex-box {
-        display: flex;
-        flex-flow: row wrap;
-        align-items: stretch;
-
-        /* Medium devices (tablets, 768px and up) */
-        @media (min-width: 768px) {
-            flex-wrap: nowrap;
-            gap: 1em;
-        }
-    }
-
-    .mission-image {
-        position: relative;
-
-        img {
-            width: 100%;
-            object-fit: cover;
-            margin-top: 2rem;
-        }
     }
 }
 

@@ -1,15 +1,6 @@
 #hero-section {
     margin-bottom: 0;
 
-    background: 
-        linear-gradient(180deg, rgba(51, 0, 25, 0.9), rgba(255, 0, 255, 0)),
-        url(../img/background/html-code_640.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    width: 100%;
-
     .hero-items {
         display: flex;
         justify-content: center;
@@ -41,12 +32,12 @@
     right: 14rem;
 
     h1 {
-        text-shadow: 3px 3px 2px black;
+        text-shadow: 3px 3px 2px darkgray;
     }
 
     p {
         letter-spacing: 2px;
-        text-shadow: 0.5px 0.5px 0.5px black;
+        text-shadow: 1px 1px 1px darkgray;
     }
 }
 

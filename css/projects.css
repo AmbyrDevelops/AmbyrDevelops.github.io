@@ -1,0 +1,136 @@
+#projects-section {
+    background-color: rgb(254, 242, 238, 0.3);
+    backdrop-filter: blur(20px);
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.project-cards {
+    margin-top: 12rem;
+    margin-bottom: 12rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    outline: 0.4rem solid lightgray;
+    outline-offset: 2rem;
+    border-top-left-radius: 2.5rem;
+    border-bottom-right-radius: 2.5rem;
+    background: white;
+    padding: 3rem;
+    margin-bottom: 12rem;
+
+    div.project-snippet {
+       width: 50%; 
+    }
+
+    video {
+        max-width: 100%;
+        max-height: 300px;
+        box-shadow: 4px 4px 10px black;
+    }
+
+    div.project-info {
+        width: 50%;
+    }
+
+    h3 {
+        margin-top: 0;
+        display: inline;
+        line-height: 2.75rem;
+        text-shadow: 1px 1px 2px darkgray;
+    }
+
+    p {
+        display: inline;
+        font-size: 1.5em;
+        line-height: 2.75rem;
+        text-shadow: 1px 1px 1px darkgray;
+    }
+}
+
+.project-snippet {
+    max-width: 100%;
+
+}
+
+.card-group {
+    column-gap: 2rem;
+    justify-content: center;
+
+    h2 {
+        display: block;
+        width: 100%;
+    }
+}
+
+.card-group > .card {
+    flex: 1 0 33%;
+    margin-bottom: 18px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 10px 0 10px gray;
+    --bs-card-border-color: gray;
+
+    @media only screen and (min-width: 768px) {
+        max-width: 33%;
+    }
+}
+
+.card-group > .card:not(:last-child) {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-body {
+    background-color: #EADDCA; /* almond */
+}
+
+.card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.card-group > .card:not(:first-child) {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-group > .card:not(:first-child) .card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-group > .card:not(:last-child) .card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-footer {
+    background-color: #967969; /* light brown */
+
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+
+    a {
+        color: white;
+        font-weight: bold;
+        font-family: 'Montserrat', sans-serif;
+        letter-spacing: 1.5px;
+
+        &:hover {
+            text-decoration: none;
+            color: black;
+        }
+    }
+}
+
+.card-footer:last-child {
+    border-radius: 0;
+}

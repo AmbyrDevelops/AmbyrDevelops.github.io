@@ -1,6 +1,6 @@
 #projects-section {
-    background-color: rgb(254, 242, 238, 0.3);
-    backdrop-filter: blur(20px);
+    background-color: rgb(254, 242, 238, 0.1);
+    backdrop-filter: blur(45px);
     margin-top: 0;
     margin-bottom: 0;
     padding-top: 4rem;
@@ -25,7 +25,9 @@
     border-bottom-right-radius: 2.5rem;
     background: white;
     padding: 3rem;
+    margin-right: 4rem;
     margin-bottom: 12rem;
+    margin-left: 4rem;
 
     div.project-snippet {
        width: 50%; 

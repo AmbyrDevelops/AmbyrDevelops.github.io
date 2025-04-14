@@ -1,5 +1,7 @@
 #skills-section {
     background-color: #fef2ee;
+    display: flex;
+    width: 100%;
     padding-top: 4rem;
     padding-bottom: 4rem;
     margin-top: 8rem;`
@@ -33,9 +35,9 @@
 .skills-grid {
     display: flex;
     gap: 12rem;
-    margin-left: 5.5rem;
     align-items: center;
     justify-content: center;
+    margin-left: 2.2rem;
 
     div {
         width: 25%;
@@ -49,8 +51,6 @@
 
 
 .skills-container {
-    margin-left: 3px;
-    margin-right: 3px;
     margin-top: 3px;
     margin-bottom: 3px;
     width: 100%;
@@ -71,8 +71,6 @@
     display: inline-block;
     position: relative;
     text-overflow: clip;
-    margin-right: 5px;
-    margin-left: 5px;
 }
 
 .skills-value:hover {

@@ -1,15 +1,10 @@
 #projects-section {
     background-color: rgb(254, 242, 238, 0.1);
     backdrop-filter: blur(45px);
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
 }
 
 .project-cards {
-    margin-top: 12rem;
-    margin-bottom: 12rem;
+    padding-top: 12rem;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -17,7 +12,7 @@
 
 .project-card {
     display: flex;
-    gap: 4rem;
+    column-gap: 2rem;
     align-items: center;
     outline: 0.4rem solid lightgray;
     outline-offset: 2rem;
@@ -28,6 +23,7 @@
     margin-right: 4rem;
     margin-bottom: 12rem;
     margin-left: 4rem;
+    height: 350px;
 
     div.project-snippet {
        width: 50%; 

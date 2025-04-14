@@ -71,17 +71,21 @@
     display: inline-block;
     position: relative;
     text-overflow: clip;
+    animation: 60s linear 0s infinite alternate tech-scroll;
 }
 
 .skills-value:hover {
-    animation: scroll-rtl 30s linear forwards;
+    animation-play-state: paused;
 }
 
-@keyframes scroll-rtl {
-    0% {
+@keyframes tech-scroll {
+    from {
+        /* pushes the sun down past the viewport */
         transform: translate(0);
     }
-    100% {
+
+    to {
+        /* returns the sun to its default position */
         transform: translate(-100%);
     }
 }

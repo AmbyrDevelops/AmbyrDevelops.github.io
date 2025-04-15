@@ -1,4 +1,4 @@
-#skills-section {
+#stack-section {
     background-color: #fef2ee;
     display: flex;
     width: 100%;
@@ -32,7 +32,7 @@
     }
 }
 
-.skills-grid {
+.stack-grid {
     display: flex;
     gap: 12rem;
     align-items: center;
@@ -50,10 +50,9 @@
 }
 
 
-.skills-container {
-    margin-top: 3px;
-    margin-bottom: 3px;
-    width: 100%;
+.stack-container {
+    margin: 0 auto;
+    width: 1440px;
     height: auto;
     font-size: 0.8125rem;
     display: inline-flex;
@@ -67,25 +66,25 @@
     background-color: transparent;
 }
 
-.skills-value {
+.stack-value {
     display: inline-block;
     position: relative;
     text-overflow: clip;
-    animation: 60s linear 0s infinite alternate tech-scroll;
+    animation: 60s linear 0s infinite alternate scroll-stack;
 }
 
-.skills-value:hover {
+.stack-value:hover {
     animation-play-state: paused;
 }
 
-@keyframes tech-scroll {
+@keyframes scroll-stack {
     from {
         /* pushes the sun down past the viewport */
-        transform: translate(0);
+        transform: translate(3%);
     }
 
     to {
         /* returns the sun to its default position */
-        transform: translate(-100%);
+        transform: translate(-77%);
     }
 }

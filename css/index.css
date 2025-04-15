@@ -37,6 +37,10 @@ body {
     }
 }
 
+main {
+    position: relative;
+}
+
 .contain {
     max-width: 1200px;
     margin: 0 auto;
@@ -120,16 +124,35 @@ body {
     }
 }
 
-.social-icons {
-    display: flex;
-    column-gap: 3rem;
-}
 
 footer {
-    background-color: rgba(44, 44, 44);
-    color: white;
-    text-align: center;
-    padding: 20px 0;
+    background-color: transparent;
+    opacity: 50%;
     width: 100%;
-    margin-bottom: -2rem;
+    height: 125px;
+    clip-path: ellipse(55% 100% at 50% 100%);
+    margin-top: -8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 2rem;
+    
+    a {
+        text-decoration: none;
+    }
+
+    img {
+        width: 40px;
+        height: auto;
+    }
+}
+
+.trademark {
+    display: block;
+    color: black;
 }

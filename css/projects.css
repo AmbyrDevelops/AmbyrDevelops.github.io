@@ -1,6 +1,7 @@
 #projects-section {
     background-color: rgb(254, 242, 238, 0.1);
     backdrop-filter: blur(45px);
+    padding-bottom: 320px; /* footer */
 }
 
 .project-cards {
@@ -54,9 +55,4 @@
         line-height: 2.75rem;
         text-shadow: 1px 1px 1px darkgray;
     }
-}
-
-.project-snippet {
-    max-width: 100%;
-
 }

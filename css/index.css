@@ -100,50 +100,24 @@ main {
     }
 }
 
-#contact-section {
-    background-color: #967969; /* mocha */
-    padding-top: 1.25rem;
-    padding-bottom: 1.25rem;
-    margin-bottom: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    a {
-        text-decoration: none;
-    }
-
-    img {
-        width: 50px;
-        height: 50px;
-    }
-
-    img:hover {
-        transform: scale(1.2);
-        transition: ease-in-out 0.3s;
-    }
-}
-
-
 footer {
-    background-color: transparent;
-    opacity: 50%;
+    background-color: #fef2ee;
     width: 100%;
-    height: 125px;
-    clip-path: ellipse(55% 100% at 50% 100%);
-    margin-top: -8rem;
+    height: 350px;
     display: flex;
-    align-items: center;
-    justify-content: center;
-}
+    padding-top: 4rem;
+    padding-bottom: 4rem;
 
-.social {
-    display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 2rem;
-    
-    a {
-        text-decoration: none;
+    ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    li {
+        font-size: 1.25em;
+        align-self: center;
+        margin-left: 2rem;
     }
 
     img {
@@ -152,7 +126,55 @@ footer {
     }
 }
 
+.footer-container {
+    padding-right: 2rem;
+    padding-left: 2rem;
+    display: flex;
+    align-items: flex-end;
+}
+
+.education {
+    width: 60%;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+
+    div {
+        max-width: fit-content;
+        flex-flow: column;
+        row-gap: 0.75rem;
+    }
+
+    ul li + li:not(:first-child) {
+        margin-left: 4.5rem;
+    }
+
+    img {
+        margin-top: 1rem;
+    }
+}
+
+.footer-left {
+    width: 40%;
+    margin-bottom: 1.25rem;
+}
+
+.social {
+    margin-bottom: 2rem;
+    display: flex;
+    column-gap: 1.5rem;
+    
+    a {
+        text-decoration: none;
+    }
+
+    img:hover {
+        transform: scale(1.2);
+        transition: ease-in-out 0.3s;
+    }
+}
+
 .trademark {
-    display: block;
+    max-width: fit-content;
     color: black;
 }

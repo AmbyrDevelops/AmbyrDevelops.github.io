@@ -1,7 +1,6 @@
 #projects-section {
     background-color: rgb(254, 242, 238, 0.1);
     backdrop-filter: blur(45px);
-    padding-bottom: 320px; /* footer */
 }
 
 .project-cards {

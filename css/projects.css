@@ -14,7 +14,7 @@
     display: flex;
     column-gap: 2rem;
     align-items: center;
-    outline: 0.4rem solid lightgray;
+    outline: 0.4rem solid #fef2ee;
     outline-offset: 2rem;
     border-top-left-radius: 2.5rem;
     border-bottom-right-radius: 2.5rem;

@@ -39,6 +39,30 @@
         letter-spacing: 2px;
         text-shadow: 1px 1px 1px darkgray;
     }
+
+    @media screen and (max-width: 814px) {
+        padding: 2.75rem;
+    }
+
+    @media screen and (max-width: 762px) {
+        top: 6.5rem;
+        right: 12rem;
+    }
+    
+    @media screen and (max-width: 701px) {
+        padding: 2rem;
+    }
+    
+    @media screen and (max-width: 622px) {
+        top: 6rem;
+    }
+    
+    @media screen and (max-width: 545px) {
+        position: absolute;
+        width: 65%;
+        top: 19.5rem;
+        right: 20%;
+    }
 }
 
 
@@ -52,4 +76,10 @@
         overflow: hidden;
         width: 75%;
     }
+
+    @media screen and (max-width: 545px) {
+        position: relative;
+        width: 40%;
+        margin-left: 0;
+        right: 8.75rem;
 }

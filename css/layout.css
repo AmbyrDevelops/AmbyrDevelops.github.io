@@ -35,6 +35,100 @@ body {
         margin-top: 1rem;
         margin-bottom: 1rem;
     }
+
+    @media screen and (max-width: 1141px) {
+        h1 {
+            font-size: 3.75em;
+        }
+
+        p {
+            font-size: 1.5em;
+        }
+    }
+
+    @media screen and (max-width: 1086px) {
+        h1 { 
+            font-size: 3.5em;
+        }
+    }
+
+    @media screen and (max-width: 1032px) {
+        h1 {
+            font-size: 3.25em;
+        }
+    }
+
+    @media screen and (max-width: 978px) {
+        h1 {
+            font-size: 3em;
+        }
+    }
+
+    @media screen and (max-width: 923px) {
+        h1 {
+            font-size: 2.75em;
+        }
+    }
+
+    @media screen and (max-width: 868px) {
+        h1 {
+            font-size: 2.5em;
+        }
+    }
+
+    @media screen and (max-width: 813px) {
+        h1 {
+            font-size: 2.5em;
+        }
+
+        p {
+            font-size: 1.25em;
+        }
+    }
+
+    @media screen and (max-width: 762px) {
+        h1 {
+            font-size: 2.25em;
+        }
+    }
+
+    @media screen and (max-width: 707px) {
+        h1 {
+            font-size: 2.2em;
+        }
+
+        p {
+            font-size: 1.2em;
+        }
+    }
+
+    @media screen and (max-width: 707px) {
+        h1 {
+            font-size: 2em;
+        }
+    }
+
+    @media screen and (max-width: 621px) {
+        h1 {
+            font-size: 1.8em;
+        }
+
+        p {
+            font-size: 1em;
+        }
+    }
+
+    @media screen and (max-width: 621px) {
+        h1 {
+            font-size: 1.65em;
+        }
+    }
+
+    @media screen and (max-width: 545px) {
+        h1 {
+            font-size: 1.85em;
+        }
+    }
 }
 
 main {
@@ -123,6 +217,10 @@ main {
             left: auto;
             font-size: 1.5em;
         }
+    }
+
+    .navbar-toggler {
+        z-index: 1;
     }
 
     .navbar-toggler-icon {

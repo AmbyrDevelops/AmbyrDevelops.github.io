@@ -8,6 +8,10 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+
+    @media screen and (max-width: 545px) {
+        padding-top: 8rem;
+    }
 }
 
 .project-card {
@@ -53,5 +57,32 @@
         font-size: 1.5em;
         line-height: 2.75rem;
         text-shadow: 1px 1px 1px darkgray;
+    }
+
+    @media screen and (max-width: 545px) {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 2.25rem;
+        margin-bottom: 10rem;
+
+        div.project-snippet {
+            width: 100%;
+        }
+
+        div.project-info {
+            padding-top: 1rem;
+            width: 100%;
+            overflow-y: unset;
+        }
+
+        h3 {
+            line-height: 1.75rem;
+            font-size: 1.25em;
+        }
+
+        p {
+            line-height: 1.75rem;
+            font-size: 1em;
+        }
     }
 }

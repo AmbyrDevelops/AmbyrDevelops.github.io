@@ -89,14 +89,33 @@ main {
         color: #868686;
     }
 
+    .nav-item {
+        letter-spacing: 1.75px;
+    }
+
+    .nav-item:hover {
+        text-decoration: underline 5px;
+        text-underline-offset: 8px;
+        text-transform: uppercase;
+        color: white;
+        transition: ease 0.4s;
+    }
+
     .navbar-text {
         color: white;
-        font-weight: 800;
+        font-size: 2em;
+        font-weight: 900;
         font-family: 'Grandiflora One', cursive;
+        letter-spacing: 2px;
     }
 
     .navbar-toggler-icon {
         background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+
+    .container-fluid {
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
     }
 
     .logo-icon {
@@ -135,6 +154,7 @@ footer {
     padding-left: 2rem;
     display: flex;
     align-items: flex-end;
+    margin-bottom: -3rem;
 }
 
 .education {
@@ -142,6 +162,7 @@ footer {
     display: flex;
     flex-flow: column;
     align-items: flex-start;
+    margin-bottom: 2rem;
 
     div {
         max-width: fit-content;
@@ -161,10 +182,15 @@ footer {
 .footer-left {
     width: 40%;
     margin-bottom: 1.25rem;
+
+    .logo {
+        width: 40%;
+        margin-left: 0;
+    }
 }
 
 .social {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     display: flex;
     column-gap: 1.5rem;
     

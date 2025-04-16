@@ -22,6 +22,10 @@
         width: 75px;
         height: auto;
         filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+
+        @media screen and (max-width: 545px) {
+            width: 40px;
+        }
     }
     
     p {
@@ -29,6 +33,12 @@
         width: 100%;
         text-align: center;
         text-shadow: 2px 2px 2px rgb(0 0 0 / 0.4);
+    }
+
+    @media screen and (max-width: 545px) {
+        margin-top: 24rem;
+        padding-top: 2rem;
+        padding-bottom: 1.5rem;
     }
 }
 
@@ -46,6 +56,10 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+    }
+
+    @media screen and (max-width: 545px) {
+        gap: 5rem;
     }
 }
 
@@ -79,12 +93,22 @@
 
 @keyframes scroll-stack {
     from {
-        /* pushes the sun down past the viewport */
         transform: translate(3%);
     }
 
     to {
-        /* returns the sun to its default position */
         transform: translate(-77%);
+    }
+}
+
+@media screen and (max-width: 545px) {
+    @keyframes scroll-stack {
+        from {
+            transform: translate(1%);
+        }
+
+        to {
+            transform: translate(-80%);
+        }
     }
 }

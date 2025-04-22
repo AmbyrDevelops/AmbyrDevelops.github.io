@@ -1,0 +1,134 @@
+#projects-section {
+    background-color: rgb(254, 242, 238, 0.1);
+    backdrop-filter: blur(45px);
+}
+
+.project-cards {
+    padding-top: 12rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: 545px) {
+        padding-top: 8rem;
+    }
+}
+
+.project-card {
+    display: flex;
+    column-gap: 2rem;
+    align-items: center;
+    outline: 0.4rem solid #fef2ee;
+    outline-offset: 2rem;
+    border-top-left-radius: 2.5rem;
+    border-bottom-right-radius: 2.5rem;
+    background: white;
+    padding: 3rem;
+    margin-right: 4rem;
+    margin-bottom: 12rem;
+    margin-left: 4rem;
+    height: 350px;
+
+    div.project-snippet {
+       width: 50%; 
+    }
+
+    video {
+        max-width: 100%;
+        max-height: 300px;
+        box-shadow: 4px 4px 10px black;
+    }
+
+    div.project-info {
+        width: 50%;
+        height: 225px;
+        overflow-y: scroll;
+    }
+
+    h3 {
+        margin-top: 0;
+        display: inline;
+        line-height: 2.75rem;
+        text-shadow: 1px 1px 2px darkgray;
+    }
+
+    p {
+        display: inline;
+        font-size: 1.5em;
+        line-height: 2.75rem;
+        text-shadow: 1px 1px 1px darkgray;
+    }
+
+    @media screen and (max-width: 775px) {
+        flex-wrap: wrap;
+        row-gap: 1rem;
+        outline: 0.4rem solid #fef2ee;
+        outline-offset: 1rem;
+        margin-right: 4rem;
+        margin-bottom: 8rem;
+        margin-left: 4rem; 
+        padding: 4rem;
+        height: 750px;
+
+        div.project-snippet {
+            width: 100%;
+        }
+
+        div.project-info {
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 650px) {
+        outline: 0.2rem solid #fef2ee;
+        outline-offset: 1rem;
+        margin-right: 2rem;
+        margin-bottom: 8rem;
+        margin-left: 2rem; 
+        padding: 4rem;
+        height: 600px;
+
+        div.project-snippet {
+            width: 100%;
+        }
+
+        div.project-info {
+            width: 100%;
+            height: 250px;
+        }
+
+        h3 {
+            font-size: 1.2em;
+            line-height: 1em;
+        }
+
+        p {
+            font-size: 0.9em;
+            line-height: 1em;
+        }
+    }
+
+    @media screen and (max-width: 445px) {
+        height: 500px;
+        padding: 2rem;
+        margin-right: 3rem;
+        margin-left: 3rem;
+    }
+
+    @media screen and (max-width: 345px) {
+        padding 1rem;
+        height: 400px;
+
+        div.project-info {
+            height: 200px;
+        }
+
+        h3 { 
+            font-size: 0.9em;
+        }
+
+        p {
+            font-size: 0.75em;
+        }
+    }
+}

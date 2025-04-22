@@ -1,0 +1,114 @@
+#stack-section {
+    background-color: #fef2ee;
+    display: flex;
+    width: 100%;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    margin-top: 8rem;`
+
+    h2 {
+        display: block;
+        width: 100%;
+    }
+
+    img {
+        display: block;
+        width: 60%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    svg {
+        width: 75px;
+        height: auto;
+        filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+
+        @media screen and (max-width: 545px) {
+            width: 40px;
+        }
+    }
+    
+    p {
+        display: block;
+        width: 100%;
+        text-align: center;
+        text-shadow: 2px 2px 2px rgb(0 0 0 / 0.4);
+    }
+
+    @media screen and (max-width: 545px) {
+        margin-top: 6rem;
+        padding-top: 2rem;
+        padding-bottom: 1.5rem;
+    }
+}
+
+.stack-grid {
+    display: flex;
+    gap: 12rem;
+    align-items: center;
+    justify-content: center;
+    padding-left: 2rem;
+
+    div {
+        width: 25%;
+        height: 100%;
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @media screen and (max-width: 545px) {
+        gap: 5rem;
+    }
+}
+
+
+.stack-container {
+    margin: 0 auto;
+    width: 1440px;
+    height: auto;
+    font-size: 0.8125rem;
+    display: inline-flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    align-items: center;
+    white-space: nowrap;
+    text-decoration: none;
+    vertical-align: middle;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.stack-value {
+    display: inline-block;
+    position: relative;
+    text-overflow: clip;
+    animation: 60s linear 0s infinite alternate scroll-stack;
+}
+
+.stack-value:hover {
+    animation-play-state: paused;
+}
+
+@keyframes scroll-stack {
+    from {
+        transform: translate(3%);
+    }
+
+    to {
+        transform: translate(-77%);
+    }
+}
+
+@media screen and (max-width: 545px) {
+    @keyframes scroll-stack {
+        from {
+            transform: translate(1%);
+        }
+
+        to {
+            transform: translate(-80%);
+        }
+    }
+}

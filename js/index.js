@@ -27,6 +27,3 @@ function initializeNavbarCollapse() {
         });
     });
 }
-
-// Call the function to initialize functionality
-initializeNavbarCollapse();

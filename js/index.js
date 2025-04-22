@@ -4,19 +4,6 @@ function initializeNavbarCollapse() {
         const navLinks = document.querySelectorAll('.nav-link'); // Select all nav links
         const navbarCollapse = document.querySelector('.navbar-collapse'); // Select the collapse element
 
-        // Show/hide functionality for the button
-        if (toggleButton && navbarCollapse) {
-            toggleButton.addEventListener('click', () => {
-                if (navbarCollapse.classList.contains('show')) {
-                    // Close the navbar
-                    navbarCollapse.classList.remove('show');
-                } else {
-                    // Open the navbar
-                    navbarCollapse.classList.add('show');
-                }
-            });
-        }
-
         navLinks.forEach(link => {
             link.addEventListener('click', () => {
                 if (navbarCollapse.classList.contains('show')) {

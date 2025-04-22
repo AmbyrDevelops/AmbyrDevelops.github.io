@@ -1,0 +1,110 @@
+#hero-section {
+    margin-bottom: 0;
+    
+    @media screen and (max-width: 621px) {
+        h1 {
+            font-size: 2.5em;
+        }
+
+        p {
+            font-size: 1em;
+        }
+    }
+
+    @media screen and (max-width: 445px) {
+        h1 {
+            font-size: 1.25em;
+        }
+
+        p {
+            font-size: 0.75em;
+        }
+    }
+
+    .hero-items {
+        display: flex;
+        flex-flow: column;
+        padding-top: 12rem;
+        padding-left: 1.5rem;
+
+        @media screen and (max-width: 775px) {
+            padding-top: 8rem;
+        }
+    }
+}
+
+.welcome {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+
+.greeting {
+    background: white;
+    opacity: 85%;
+    border-top-left-radius: 15%;
+    border-bottom-right-radius: 15%;
+    border-style: dashed;
+    border-width: 0.4rem;
+    border-block-start-color: darkred;
+    width: 80%;
+    margin-top: -10rem;
+    margin-left: 10rem;
+    padding: 6rem;
+
+    h1 {
+        text-shadow: 3px 3px 2px darkgray;
+    }
+
+    p {
+        letter-spacing: 2px;
+        text-shadow: 1px 1px 1px darkgray;
+    }
+
+    @media screen and (max-width: 1035px) {
+        width: 80%;
+        margin-top: -10rem;
+        margin-left: 10rem;
+        padding: 4rem;
+    }
+
+    @media screen and (max-width: 775px) {
+        margin-top: -6rem;
+        margin-left: 6rem;
+        padding: 3rem;
+    }
+
+    @media screen and (max-width: 621px) {
+        margin-top: -4rem;
+        margin-left: 5rem;
+        padding: 2rem;
+    }
+
+    @media screen and (max-width: 445px) {
+        padding: 1rem;
+        margin-top: -3rem;
+        margin-left: 1rem;
+    }
+}
+
+
+.logo {
+    width: 60%;
+    margin-bottom: 0.5rem;
+
+    img {
+        border-radius: 50%;
+        background-color: white;
+        overflow: hidden;
+        width: 75%;
+    }
+
+    @media screen and (max-width: 775px) {
+        width: 50%;
+        margin-left: 0;
+}
+
+.testing-calc {
+    display: block;
+    background: yellow;
+    width: 100%;
+}

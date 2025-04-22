@@ -2,9 +2,7 @@
 
 ## About
 
-- Two single page web apps brought together to create a living resume.
-- Homepage showcases my living resume and projects.
-- Wiki page is linked housing the more about me topics.
+- Single page living resume.
 
 ## Stack
 
@@ -15,4 +13,3 @@
 
 - Incorporating a JS feature.
 - Updating CodePen portfolio with a recent CSS feature.
-- Create a dedicated layout stylesheet.

@@ -1,15 +1,27 @@
-# Ambyr Develops
+# AmbyrDevelops
 
-## About
+Welcome! I’m Ambyr, a full stack web developer. Thanks for visiting my interactive resume that I use to share my skills, experience, and projects.
 
-- Single page living resume.
+I re-designed my portfolio recently to try a scrollable parallax design. My goal was to make my page more concise and easier to scan on mobile while allowing the content to shine through.
 
-## Stack
+---
 
-- Built with HTML & CSS utilizng GitHub's deployment checker for errors.
-- WSL2 localhost & Vim text editor for project work.
+## 🌐 Live Site
+[ambyrdevelops.github.io](https://ambyrdevelops.github.io)  
+[CodePen Portfolio](https://codepen.io/ambyrdevelops)
 
-## Future updates 
+---
 
-- Incorporating a JS feature.
-- Updating CodePen portfolio with a recent CSS feature.
+## 🛠️ Tech Stack
+
+- Built with **HTML** & **CSS** (utilizing GitHub’s deployment checker for errors)
+- Developed locally on **WSL2** with **Vim** text editor
+
+---
+
+## 🚧 Future Updates
+
+- Incorporating a JS feature
+- Implement web framework
+
+---
